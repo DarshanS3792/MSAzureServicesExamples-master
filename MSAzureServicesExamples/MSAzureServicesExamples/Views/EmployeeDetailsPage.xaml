@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MSAzureServicesExamples.Views.EmployeeDetailsPage">
+    <ContentPage.Content>
+        <StackLayout Margin="10" VerticalOptions="StartAndExpand">
+            <Label Text="Name" FontAttributes="Bold" />
+            <Entry Text="{Binding Name}" />
+
+            <Label Text="Age" FontAttributes="Bold" />
+            <Entry Text="{Binding Age}" />
+
+            <Button Text="Save" BackgroundColor="DarkSlateBlue" TextColor="White" Command="{Binding SaveDetailsCommand}" />
+
+            <Button Text="Cancel" BackgroundColor="Gray" TextColor="Black" Command="{Binding GoBackCommand}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
