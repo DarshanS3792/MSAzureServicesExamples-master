@@ -7,7 +7,7 @@
         <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
             <Label Text="Examples using different types of services available in Azure"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" FontSize="Default" FontAttributes="Bold" />
+                HorizontalOptions="CenterAndExpand" FontSize="Medium" FontAttributes="Bold" />
 
             <Entry Text="{Binding UserName}" 
                  Placeholder="User" 

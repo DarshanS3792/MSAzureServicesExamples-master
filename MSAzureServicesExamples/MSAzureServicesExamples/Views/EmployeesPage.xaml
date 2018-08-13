@@ -6,7 +6,7 @@
     <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 
         <StackLayout Margin="10" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
-            <Label Text="{Binding UserName, StringFormat='Welcome {0}'}" FontSize="Large" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="{Binding UserName, StringFormat='Welcome {0}'}" FontSize="Medium" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
 
             <Label Text="{Binding TimeTaken}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="Default" FontAttributes="Bold"/>
 

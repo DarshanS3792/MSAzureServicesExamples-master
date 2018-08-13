@@ -33,7 +33,7 @@ namespace MSAzureServicesExamples.Services.RedisCache
             List<Employee> employeeList = new List<Employee>();
             if (redisCache != null && dataAdded == false)
             {
-                for (int i = 0; i < 50; i++)
+                for (int i = 0; i < 100; i++)
                 {
                     employeeList.Add(new Employee
                     {
@@ -45,7 +45,7 @@ namespace MSAzureServicesExamples.Services.RedisCache
 
                 redisCache.StringSet("employeeList", JsonConvert.SerializeObject(employeeList)); // Example to set list
 
-                //Example to set single object
+                // Example to set single object
                 //cache.StringSet("employee", JsonConvert.SerializeObject(employee));
 
                 dataAdded = true;
