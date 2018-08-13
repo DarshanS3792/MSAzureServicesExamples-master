@@ -34,6 +34,9 @@ namespace MSAzureServicesExamples
             containerRegistry.RegisterForNavigation<EmployeeDetailsPage, EmployeeDetailsPageViewModel>();
             containerRegistry.RegisterForNavigation<UpdateEmployeeDetailsPage, UpdateEmployeeDetailsPageViewModel>();
             containerRegistry.RegisterForNavigation<RedisCacheExamplePage, RedisCacheExamplePageViewModel>();
+            containerRegistry.RegisterForNavigation<AzureStorageExamplePage, AzureStorageExamplePageViewModel>();
+            containerRegistry.RegisterForNavigation<TextFileUploadAndDownloadPage>();
+            containerRegistry.RegisterForNavigation<TextFileBrowserPage>();
         }
     }
 }

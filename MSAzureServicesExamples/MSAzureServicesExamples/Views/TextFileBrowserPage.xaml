@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MSAzureServicesExamples.Views.TextFileBrowserPage">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Text="Get all the files stored in Azure Blob Storage" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="Default" FontAttributes="Bold" />
+
+            <Button x:Name="getFilesButton" Text="Get Text Files" BackgroundColor="DarkSlateBlue" TextColor="White" Clicked="OnGetFileListButtonClicked" />
+
+            <ActivityIndicator x:Name="activityIndicator" />
+
+            <ListView x:Name="listView" />
+
+            <Label Text="Text file contents" FontSize="Default" />
+
+            <Editor x:Name="editor" HeightRequest="100" IsEnabled="false" />
+
+            <Button x:Name="deleteButton" Text="Delete" BackgroundColor="Gray" TextColor="White" IsEnabled="false" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

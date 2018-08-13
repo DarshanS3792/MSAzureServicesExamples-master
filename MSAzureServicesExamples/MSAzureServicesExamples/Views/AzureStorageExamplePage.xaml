@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MSAzureServicesExamples.Views.AzureStorageExamplePage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="20">
+            <Label Text="Example demonstrating the use of Azure Storage (Blob)"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="Default" FontAttributes="Bold" />
+            
+            <Button Text="Upload Text Files To Blob Storage" BackgroundColor="DarkSlateBlue" TextColor="White" Command="{Binding GoToTextFileUploadAndDownloadPageCommand}" />
+
+            <Button Text="Get Text Files From Blob Storage" BackgroundColor="DarkSlateBlue" TextColor="White" Command="{Binding GoToTextFileBrowserPageCommand}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

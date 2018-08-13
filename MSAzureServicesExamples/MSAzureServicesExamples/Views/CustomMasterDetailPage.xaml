@@ -6,7 +6,7 @@
         <ContentPage Title="Menu">
             <ContentPage.Content>
                 <StackLayout BackgroundColor="White" Padding="20">
-                    <Button Text="CosmosDB" 
+                    <Button Text="Cosmos DB" 
                               TextColor="White"
                               BackgroundColor="DarkSlateBlue" 
                               Command="{Binding OnNavigateCommand}" 
@@ -16,6 +16,11 @@
                               BackgroundColor="DarkSlateBlue" 
                               Command="{Binding OnNavigateCommand}" 
                               CommandParameter="NavigationPage/RedisCacheExamplePage"/>
+                    <Button Text="Azure Storage" 
+                              TextColor="White"
+                              BackgroundColor="DarkSlateBlue" 
+                              Command="{Binding OnNavigateCommand}" 
+                              CommandParameter="NavigationPage/AzureStorageExamplePage"/>
                     <Button Text="Log Out"  
                               TextColor="White"
                               BackgroundColor="DarkSlateBlue" 
