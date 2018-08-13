@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MSAzureServicesExamples.Views.CustomMasterDetailPage">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <ContentPage.Content>
+                <StackLayout BackgroundColor="White" Padding="20">
+                    <Button Text="CosmosDB" 
+                              TextColor="White"
+                              BackgroundColor="DarkSlateBlue" 
+                              Command="{Binding OnNavigateCommand}" 
+                              CommandParameter="NavigationPage/EmployeesPage"/>
+                    <Button Text="Redis Cache" 
+                              TextColor="White"
+                              BackgroundColor="DarkSlateBlue" 
+                              Command="{Binding OnNavigateCommand}" 
+                              CommandParameter="NavigationPage/RedisCacheExamplePage"/>
+                    <Button Text="Log Out"  
+                              TextColor="White"
+                              BackgroundColor="DarkSlateBlue" 
+                              Command="{Binding OnNavigateCommand}" 
+                              CommandParameter="NavigationPage/LoginPage"/>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+</MasterDetailPage>

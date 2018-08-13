@@ -10,5 +10,8 @@
 
         // Azure Function
         public static readonly string GetEmployeesFunctionUrl = "https://getemployees.azurewebsites.net/api/HttpTriggerCSharp1";
+
+        // Azure Redis Cache
+        public static readonly string ConnectionString = "redisexample.redis.cache.windows.net:6380,password=IoM3I0eLcyQizwb7He+Zo4jbVFRsSEPWV63wcq8KA6Q=,ssl=True,abortConnect=False";
     }
 }
