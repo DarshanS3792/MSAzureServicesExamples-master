@@ -57,7 +57,7 @@ namespace MSAzureServicesExamples.ViewModels
 
             await _pageDialogService.DisplayAlertAsync("Info", "Updated Successfully", "Ok");
 
-            await _navigationService.NavigateAsync("EmployeesPage");
+            await _navigationService.GoBackAsync();
         }
 
         async void DeleteEmployee()
@@ -68,7 +68,7 @@ namespace MSAzureServicesExamples.ViewModels
                 var employee = empData;
                 await App.EmployeeDetailsManager.DeleteEmployeeAsync(employee);
                 await _pageDialogService.DisplayAlertAsync("Info", "Deleted Successfully", "Ok");
-                await _navigationService.NavigateAsync("EmployeesPage");
+                await _navigationService.GoBackAsync();
             }
         }
 

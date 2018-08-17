@@ -10,7 +10,7 @@
 
             <Label Text="{Binding TimeTaken}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="Default" FontAttributes="Bold"/>
 
-            <ListView x:Name="EmployeeList" ItemsSource="{Binding Employees}">
+            <ListView x:Name="EmployeeList" ItemsSource="{Binding Employees}" CachingStrategy = "RecycleElement">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell Text="{Binding Name}" Detail="{Binding Age}" />

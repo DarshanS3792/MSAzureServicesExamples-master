@@ -16,5 +16,8 @@
 
         // Azure Storage
         public static readonly string StorageConnection = "DefaultEndpointsProtocol=https;AccountName=azurestorageex;AccountKey=iuWvGzElW3HqwwmY/cLlzd/QF1VBrqx9ngy803IM5tg68J64B+K1sCu1TCI4pxG7Sqlf24RhgbnMU6Ldx0QEgg==;EndpointSuffix=core.windows.net";
+
+        // Logic Apps
+        public static readonly string RequestUrl = "https://prod-50.westus.logic.azure.com:443/workflows/1941c15989974ceba49f3a40cab357e3/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=qBCkOzLZg-_GpKg2NaY6jEK_q5QsQktU72UtHsh-BYM";
     }
 }

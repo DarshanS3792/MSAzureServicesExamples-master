@@ -1,8 +1,11 @@
 ﻿using MSAzureServicesExamples.Models;
+using Newtonsoft.Json;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
+using System.Net.Http;
+using System.Text;
 using System.Windows.Input;
 
 namespace MSAzureServicesExamples.ViewModels
@@ -52,11 +55,20 @@ namespace MSAzureServicesExamples.ViewModels
                 Name = Name
             };
 
+            // Logic App - Send an email whenever a new employee(record) is added to Cosmos DB
+            //var json = JsonConvert.SerializeObject(employeeDetails);
+
+            //using (var client = new HttpClient())
+            //{
+            //    var content = new StringContent(json, Encoding.UTF8, "application/json");
+            //    var response = await client.PostAsync(AzureConnection.RequestUrl, content);
+            //}
+
             await App.EmployeeDetailsManager.SaveEmployeeDetailsAsync(employeeDetails, isNewEmp);
 
             await _pageDialogService.DisplayAlertAsync("Info", "Saved Successfully", "Ok");
 
-            await _navigationService.NavigateAsync("EmployeesPage");
+            await _navigationService.GoBackAsync();
         }
 
         async void GoBack()

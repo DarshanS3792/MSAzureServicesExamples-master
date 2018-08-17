@@ -1,10 +1,12 @@
 ﻿using MSAzureServicesExamples.Models;
+using Newtonsoft.Json;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
 using System;
 using System.Collections.Generic;
+using System.Net.Http;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
